@@ -1,5 +1,4 @@
-#MyShell
-Implement a command line interpreter, or shell, on top of Linux
+MyShell - Implement a command line interpreter, or shell, on top of Linux
 
 The shell functions like this : When you type in a command (in response to its prompt), the shell creates a child process that executes the command you entered and then prompts for more user input when it has finished.  More specifically, shells are typically implemented as a simple loop that waits for input and fork()s a new child process to execute the command; the child process then exec()s the specified command while the parent process wait()s for the child to finish before continuing with the next iteration of the loop.
 
